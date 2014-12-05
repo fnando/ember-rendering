@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "ember-rendering",
+  "version": "0.0.0",
+  "dependencies": {
+    "ember": "canary",
+    "react": "~0.12.1"
+  },
+  "resolutions": {
+    "ember": "canary",
+    "handlebars": ">= 2.0.0 < 3.0.0"
+  }
+}

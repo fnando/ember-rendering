@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/handlebars/handlebars.js"></script>
+  <script src="bower_components/ember/ember.js"></script>
+  <script src="bower_components/react/react-with-addons.js"></script>
+  <script src="app.js"></script>
+  <script src="data.js"></script>
+</head>
+<body>
+  <script type="text/x-handlebars" data-template-name="index">
+    {{#if isRenderingWithBound}}
+      <table>
+        <thead>
+          <tr>
+            {{#each field in fields}}
+              <th>{{field}}</th>
+            {{/each}}
+          </tr>
+        </thead>
+        <tbody>
+          {{#each row in values}}
+            <tr>
+              {{#each column in row}}
+                <td>{{column}}</td>
+              {{/each}}
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    {{/if}}
+
+    {{#if isRenderingWithUnbound}}
+      <table>
+        <thead>
+          <tr>
+            {{#each field in fields}}
+              <th>{{field}}</th>
+            {{/each}}
+          </tr>
+        </thead>
+        <tbody>
+          {{#each row in values}}
+            <tr>
+              {{#each column in row}}
+                <td>{{unbound column}}</td>
+              {{/each}}
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    {{/if}}
+
+    {{#if isRenderingWithWorker}}
+      <table>
+        <thead>
+          <tr>
+            {{#each field in fields}}
+              <th>{{field}}</th>
+            {{/each}}
+          </tr>
+        </thead>
+        <tbody>
+          {{{tableContents}}}
+        </tbody>
+      </table>
+    {{/if}}
+
+    {{#if isRenderingWithReact}}
+      <table>
+        <thead>
+          <tr>
+            {{#each field in fields}}
+              <th>{{field}}</th>
+            {{/each}}
+          </tr>
+        </thead>
+
+        {{table-contents values=values}}
+      </table>
+    {{/if}}
+
+    <button {{action 'setRenderType' 'bound'}}>Render with bound helpers</button>
+    <button {{action 'setRenderType' 'unbound'}}>Render with unbound helpers</button>
+    <button {{action 'setRenderType' 'worker'}}>Render with worker</button>
+    <button {{action 'setRenderType' 'react'}}>Render with react</button>
+  </script>
+</body>
+</html>
