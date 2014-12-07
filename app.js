@@ -1,3 +1,4 @@
+Ember.FEATURES['ember-htmlbars'] = true;
 var App = Em.Application.create();
 
 App.IndexRoute = Ember.Route.extend({

@@ -5,9 +5,11 @@
 5. Always reload the page after rendering the results to have a clean state.
 
 ![](screenshots/canary-bound.png?raw=true)
+![](screenshots/canary-htmlbars-bound.png?raw=true)
 ![](screenshots/canary-unbound.png?raw=true)
+![](screenshots/canary-htmlbars-unbound.png?raw=true)
 ![](screenshots/canary-worker.png?raw=true)
-![](screenshots/ember-canary-react.png?raw=true)
+![](screenshots/canary-react.png?raw=true)
 ![](screenshots/ember18-bound.png?raw=true)
 ![](screenshots/ember18-unbound.png?raw=true)
 ![](screenshots/ember18-worker.png?raw=true)
