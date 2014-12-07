@@ -4,13 +4,17 @@
 4. Go to <http://localhost:9999>.
 5. Always reload the page after rendering the results to have a clean state.
 
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/canary-bound.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/canary-unbound.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/canary-worker.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/ember-canary-react.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/ember18-bound.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/ember18-unbound.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/ember18-worker.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/ember19-bound.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/ember19-unbound.png)
-![](https://raw.githubusercontent.com/fnando/ember-rendering/master/screenshots/ember19-worker.png)
+![](screenshots/canary-bound.png?raw=true)
+![](screenshots/canary-unbound.png?raw=true)
+![](screenshots/canary-worker.png?raw=true)
+![](screenshots/ember-canary-react.png?raw=true)
+![](screenshots/ember18-bound.png?raw=true)
+![](screenshots/ember18-unbound.png?raw=true)
+![](screenshots/ember18-worker.png?raw=true)
+![](screenshots/ember19-bound.png?raw=true)
+![](screenshots/ember19-unbound.png?raw=true)
+![](screenshots/ember19-worker.png?raw=true)
+
+![](screenshots/bar-comparison.png?raw=true)
+
+[Click here to see the spreadsheet with the data for the bar graph.](https://docs.google.com/spreadsheets/d/1vOdjnwlSdFV03JgGTxZ6w0tGBEnktBFx-OGV6wPaL8U/edit?usp=sharing)
